@@ -6,13 +6,16 @@ A Python tool to migrate your Docmost exports to Outline, preserving document hi
 
 - ✅ Migrates all documents with proper hierarchy
 - ✅ Uploads images and file attachments
-- ✅ Converts HTML `<details>` tags to headings
+- ✅ Converts HTML `<details>` tags to headings (doesn't work 100% of the time)
 - ✅ Handles multiple root folders
 - ✅ Automatic rate limit handling
 
 ⚠️ **Known Limitations:**
 
 - Internal markdown links between documents are not converted
+- slashes in document titles may cause issues and are not correctly parsed
+   - "Coop/Migros.md" becomes Migros.md
+- checkboxes are not imported correctly
 
 ## Installation
 
